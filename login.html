@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dyanamic</title>
+    <style>
+        @keyframes scroll-right {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        }
+        div{
+            border: 5px solid darkgreen;
+            width: 50%;
+            
+            
+        }
+        header{
+            padding-top: 5px;
+            background-color: lightgreen;
+            overflow: hidden;
+        }
+        .scrolling-text {
+            animation: scroll-right 8s linear infinite;
+            display: inline-block;
+            padding: 0 20px;
+        }
+        a{
+            padding: 20px;
+        }
+        nav{
+            background-color:darkgoldenrod;
+        }
+        footer{
+            background-color: gray;
+        }
+        .link-blue{
+            color: blue;
+        }
+        .btn-login{
+            cursor: grab;
+        }
+        .btn-reset{
+            cursor: wait;
+        }
+       
+    </style>
+</head>
+<body align="center">
+<div>
+    <header><strong class="scrolling-text">Login to enter our portal</strong></header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="  #about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <form action="">
+        <fieldset>
+            <legend>Log-IN</legend>
+            <label for="user">Username:</label>
+            <input type="text" id="user" placeholder="Username"><br><br>
+            <label for="pass">Password:</label>
+            <input type="password"id="pass" placeholder="Password">
+            <p>forgot ur password? <a class="link-blue" href="C:\Users\kiran\OneDrive\Desktop\html\basic2.html">click here!</a></p><br>
+            visit us on<a class="link-blue" href="https://qspiders.com/" target="_framename">Qspiders</a><br>
+            <input type="button"value="Login" class="btn-login">
+            <input type="reset"value="reset"class="btn-reset">
+        </fieldset>
+
+    </form>
+    <footer>&copy; 2026 Kiran consoltancy.</footer>
+</div>
+    
+</body>
+</html>
